@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML & CSS Page</title>
+    <style>
+      /* Загальні стилі для всієї сторінки */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Шапка сторінки */
+      header {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      /* Основний контейнер */
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Стилі для зображення */
+      .container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Секція зі списком */
+      .list-section {
+        margin-top: 20px;
+      }
+
+      /* Стилі для посилань */
+      a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Кнопка */
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #4caf50;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+
+      .button:hover {
+        background-color: #45a049;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .item {
+        flex: 1 1 150px; /* зростання, стиснення, початковий розмір */
+        height: 100px;
+        background-color: #4caf50;
+        color: white;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Шапка сторінки -->
+    <header>
+      <h1>Вітаємо на нашій веб-сторінці!</h1>
+    </header>
+
+    <!-- Основний контейнер з контентом -->
+    <div class="container">
+      <h2>Про нас</h2>
+      <p>
+        Це приклад базової веб-сторінки з використанням HTML та CSS. Тут ви
+        можете знайти приклади основних тегів HTML та CSS-стилів.
+      </p>
+
+      <!-- Зображення -->
+      <img
+        src="https://via.placeholder.com/800x400"
+        alt="Зображення для прикладу"
+      />
+
+      <!-- Секція зі списком -->
+      <div class="list-section">
+        <h3>Наші послуги</h3>
+        <ul>
+          <li>Веб-дизайн</li>
+          <li>Розробка сайтів</li>
+          <li>Технічна підтримка</li>
+        </ul>
+      </div>
+
+      <!-- Посилання та кнопка -->
+      <p>
+        Щоб дізнатися більше, відвідайте наш <a href="#">блог</a> або зв'яжіться
+        з нами для консультації.
+      </p>
+      <a href="#" class="button">Зв'язатися з нами</a>
+    </div>
+
+    <div class="gallery">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>
